@@ -20,7 +20,8 @@
   outline: 1px solid grey;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  padding: 20px;
+  padding: 360px 0 0 120px;
+  font-family: 'Pacifico', cursive;
 }
 
 #book #root1 {
