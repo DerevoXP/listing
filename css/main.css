@@ -3,21 +3,22 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: gainsboro;
-  font-family: 'Neucha', cursive;
+  background-color: #fbd59d;
 }
 
 #navigate {
   width: 100%;
   height: 50px;
-  background-color: grey;
+  background-color: #e66767;
   position: fixed;
   top: 0;
   z-index: 3000;
+  font-family: 'Pacifico', cursive;
+  font-size: 14px;
 }
 
 #navigate #navCrutch {
-  width: 300px;
+  width: 320px;
   height: 50px;
   margin: 0 auto;
   display: -webkit-box;
@@ -25,10 +26,24 @@
   display: flex;
 }
 
+#navigate #navCrutch #leftGrad {
+  width: 10px;
+  height: 50px;
+  background: -webkit-gradient(linear, left top, right top, from(#e66767), to(#ea8685));
+  background: linear-gradient(90deg, #e66767, #ea8685);
+}
+
+#navigate #navCrutch #rightGrad {
+  width: 10px;
+  height: 50px;
+  background: -webkit-gradient(linear, left top, right top, from(#ea8685), to(#e66767));
+  background: linear-gradient(90deg, #ea8685, #e66767);
+}
+
 #navigate #navCrutch #tableOfContent {
   width: 150px;
   height: 50px;
-  background-color: grey;
+  background-color: #ea8685;
   z-index: 2000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,6 +55,7 @@
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  font-size: 18px;
 }
 
 #navigate #navCrutch #tableOfContent:hover {
@@ -64,11 +80,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: grey;
+  background-color: #ea8685;
 }
 
 #navigate #navCrutch #buttons #buttonCrutch #indicator {
-  background-color: grey;
+  background-color: #ea8685;
+  font-size: 18px;
 }
 
 #navigate #navCrutch #buttons #buttonCrutch .button {
@@ -84,8 +101,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: grey;
+  background-color: #ea8685;
   cursor: pointer;
+  font-size: 18px;
 }
 
 #navigate #navCrutch #buttons #buttonCrutch .button:hover {
@@ -94,10 +112,10 @@
 
 #navigate #navCrutch #hovvver {
   width: 150px;
-  height: 250px;
-  background-color: grey;
+  height: 300px;
+  background-color: #ea8685;
   position: absolute;
-  top: -200px;
+  top: -250px;
   z-index: 1000;
   -webkit-transition: 1s;
   transition: 1s;
@@ -114,10 +132,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: 10px;
 }
 
 #navigate #navCrutch #hovvver div {
-  background-color: grey;
+  background-color: #ea8685;
   cursor: pointer;
 }
 
@@ -129,25 +148,28 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 100px 0 0 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 #root #leftCont {
   width: 800px;
-  height: 770px;
-  margin: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 20px auto;
 }
 
 #root #leftCont #book {
   width: 800px;
   height: 500px;
   position: relative;
-  -webkit-box-shadow: 5px 5px 5px 0px grey;
-          box-shadow: 5px 5px 5px 0px grey;
 }
 
 #root #leftCont #book div {
@@ -155,7 +177,6 @@
   height: 500px;
   position: absolute;
   background-color: white;
-  outline: 1px solid grey;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -175,7 +196,6 @@
   right: 0;
   -webkit-transform: matrix(0.0001, 0, 0, 1, -200, 0);
           transform: matrix(0.0001, 0, 0, 1, -200, 0);
-  background-color: grey;
 }
 
 #root #leftCont #book #root3 {
@@ -193,7 +213,6 @@
   left: 0;
   -webkit-transform: matrix(0.0001, 0, 0, 1, 200, 0);
           transform: matrix(0.0001, 0, 0, 1, 200, 0);
-  background-color: grey;
 }
 
 #root #leftCont #book #root6 {
@@ -231,37 +250,39 @@
 
 #root #leftCont #doughter {
   width: 800px;
-  height: 350px;
-  background-color: gainsboro;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   padding: 5px;
   margin: 20px 0 0 0;
   font-size: 23px;
 }
 
 #root #leftCont #doughter h2 {
-  margin: 20px 0 0 0;
+  margin: 50px 0 0 0;
   text-align: center;
+  font-family: 'Neucha', cursive;
 }
 
 #root #leftCont #doughter p {
   margin: 20px 0 0 0;
   text-align: justify;
   text-indent: 20px;
+  font-family: 'Pacifico', cursive;
 }
 
 #root #rightCont {
-  height: 870px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  width: 800px;
+  height: 1350px;
+  margin: 20px auto;
 }
 
 #root #rightCont #father {
-  height: 870px;
-  background-color: gainsboro;
+  width: 800px;
   padding: 0 5px 0 5px;
-  margin: 20px 20px 20px 0;
-  font-size: 23px;
+  margin: 50px 20px 20px 0;
+  font-size: 25px;
+  font-family: 'Neucha', cursive;
 }
 
 #root #rightCont #father h2 {
@@ -274,24 +295,11 @@
   text-indent: 20px;
 }
 
-@media screen and (max-width: 1500px) {
-  #root {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #root #leftCont {
-    margin: 20px auto;
-    height: 800px;
-  }
-  #root #rightCont {
-    width: 800px;
-    margin: 20px auto;
-  }
-  #root #rightCont #father {
-    width: 800px;
-  }
+#root #footer {
+  width: 60%;
+  text-align: center;
+  margin: 50px auto;
+  font-size: 12px;
 }
 
 @media screen and (max-width: 840px) {
@@ -328,11 +336,11 @@
   }
   #root #leftCont #doughter {
     width: 600px;
-    height: 710px;
   }
   #root #rightCont {
     width: 600px;
     margin: 20px auto;
+    height: 1700px;
   }
   #root #rightCont #father {
     width: 600px;
@@ -342,7 +350,6 @@
 @media screen and (max-width: 620px) {
   #root #leftCont {
     width: 400px;
-    height: 1500px;
   }
   #root #leftCont #book {
     width: 400px;
@@ -396,22 +403,19 @@
   }
   #root #leftCont #doughter {
     width: 400px;
-    height: 300px;
   }
   #root #rightCont {
     width: 400px;
-    height: 900px;
+    height: 2350px;
   }
   #root #rightCont #father {
     width: 400px;
-    height: 800px;
   }
 }
 
 @media screen and (max-width: 410px) {
   #root #leftCont {
     width: 300px;
-    height: 1550px;
   }
   #root #leftCont #book {
     width: 300px;
@@ -448,15 +452,13 @@
   }
   #root #leftCont #doughter {
     width: 300px;
-    height: 450px;
   }
   #root #rightCont {
     width: 300px;
-    height: 1000px;
+    height: 3200px;
   }
   #root #rightCont #father {
     width: 300px;
-    height: 1300px;
   }
 }
 /*# sourceMappingURL=main.css.map */
