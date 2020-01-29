@@ -104,6 +104,11 @@
   background-color: #ea8685;
   cursor: pointer;
   font-size: 18px;
+  background-color: #ea8685;
+}
+
+#navigate #navCrutch #buttons #buttonCrutch .button i {
+  background-color: #ea8685;
 }
 
 #navigate #navCrutch #buttons #buttonCrutch .button:hover {
@@ -273,7 +278,9 @@
 
 #root #rightCont {
   width: 800px;
-  height: 1350px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   margin: 20px auto;
 }
 
@@ -300,6 +307,13 @@
   text-align: center;
   margin: 50px auto;
   font-size: 12px;
+}
+
+#root #crutch {
+  width: 1px;
+  height: 110vh;
+  position: absolute;
+  left: 0;
 }
 
 @media screen and (max-width: 840px) {
@@ -340,7 +354,9 @@
   #root #rightCont {
     width: 600px;
     margin: 20px auto;
-    height: 1700px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   #root #rightCont #father {
     width: 600px;
@@ -406,7 +422,9 @@
   }
   #root #rightCont {
     width: 400px;
-    height: 2350px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   #root #rightCont #father {
     width: 400px;
@@ -455,7 +473,9 @@
   }
   #root #rightCont {
     width: 300px;
-    height: 3200px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   #root #rightCont #father {
     width: 300px;
