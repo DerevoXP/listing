@@ -1,6 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   background-color: #fbd59d;
@@ -49,11 +49,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
   font-size: 18px;
 }
@@ -75,11 +75,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #ea8685;
 }
 
@@ -96,11 +96,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #ea8685;
   cursor: pointer;
   font-size: 18px;
@@ -128,15 +128,15 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-left: 10px;
 }
 
@@ -155,8 +155,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 100px 0 0 0;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -200,7 +200,7 @@
   z-index: 400;
   right: 0;
   -webkit-transform: matrix(0.0001, 0, 0, 1, -200, 0);
-          transform: matrix(0.0001, 0, 0, 1, -200, 0);
+  transform: matrix(0.0001, 0, 0, 1, -200, 0);
 }
 
 #root #leftCont #book #root3 {
@@ -217,7 +217,7 @@
   z-index: 400;
   left: 0;
   -webkit-transform: matrix(0.0001, 0, 0, 1, 200, 0);
-          transform: matrix(0.0001, 0, 0, 1, 200, 0);
+  transform: matrix(0.0001, 0, 0, 1, 200, 0);
 }
 
 #root #leftCont #book #root6 {
@@ -320,37 +320,46 @@
   #root #leftCont {
     width: 600px;
   }
+
   #root #leftCont #book {
     width: 600px;
     height: 400px;
   }
+
   #root #leftCont #book div {
     width: 300px;
     height: 400px;
   }
+
   #root #leftCont #book div div img {
     width: 300px;
     height: 400px;
   }
+
   #root #leftCont #book #root2 {
     -webkit-transform: matrix(0.0001, 0, 0, 1, -150, 0);
-            transform: matrix(0.0001, 0, 0, 1, -150, 0);
+    transform: matrix(0.0001, 0, 0, 1, -150, 0);
   }
+
   #root #leftCont #book #root5 {
     -webkit-transform: matrix(0.0001, 0, 0, 1, 150, 0);
-            transform: matrix(0.0001, 0, 0, 1, 150, 0);
+    transform: matrix(0.0001, 0, 0, 1, 150, 0);
   }
+
   #root #leftCont #book #mask {
     width: 600px;
     height: 400px;
   }
+
   #root #leftCont #book #mask div {
     width: 300px;
     height: 400px;
   }
+
   #root #leftCont #doughter {
     width: 600px;
   }
+
   #root #rightCont {
     width: 600px;
     margin: 20px auto;
@@ -358,6 +367,7 @@
     height: -moz-fit-content;
     height: fit-content;
   }
+
   #root #rightCont #father {
     width: 600px;
   }
@@ -367,65 +377,81 @@
   #root #leftCont {
     width: 400px;
   }
+
   #root #leftCont #book {
     width: 400px;
     height: 1000px;
   }
+
   #root #leftCont #book div {
     width: 400px;
     height: 500px;
   }
+
   #root #leftCont #book div div img {
     width: 400px;
     height: 500px;
   }
+
   #root #leftCont #book #root1 {
     top: 0;
   }
+
   #root #leftCont #book #root2 {
     bottom: 0;
     -webkit-transform: matrix(1, 0, 0, 0.001, 0, -250);
-            transform: matrix(1, 0, 0, 0.001, 0, -250);
+    transform: matrix(1, 0, 0, 0.001, 0, -250);
   }
+
   #root #leftCont #book #root3 {
     top: 0;
   }
+
   #root #leftCont #book #root4 {
     bottom: 0;
   }
+
   #root #leftCont #book #root5 {
     top: 0;
     -webkit-transform: matrix(1, 0, 0, 0.001, 0, 250);
-            transform: matrix(1, 0, 0, 0.001, 0, 250);
+    transform: matrix(1, 0, 0, 0.001, 0, 250);
   }
+
   #root #leftCont #book #root6 {
     z-index: 100;
     bottom: 0;
   }
+
   #root #leftCont #book #mask {
     width: 400px;
     height: 1000px;
   }
+
   #root #leftCont #book #mask div {
     width: 400px;
     height: 500px;
     opacity: 0;
   }
+
   #root #leftCont #book #mask #maskLeft {
     top: 0;
   }
+
   #root #leftCont #book #mask #maskRight {
     bottom: 0;
   }
+
   #root #leftCont #doughter {
     width: 400px;
   }
+
   #root #rightCont {
     width: 400px;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
+
   #root #rightCont #father {
     width: 400px;
   }
@@ -435,50 +461,62 @@
   #root #leftCont {
     width: 300px;
   }
+
   #root #leftCont #book {
     width: 300px;
     height: 800px;
   }
+
   #root #leftCont #book div {
     width: 300px;
     height: 400px;
   }
+
   #root #leftCont #book div div img {
     width: 300px;
     height: 400px;
   }
+
   #root #leftCont #book #root1 {
     z-index: 100;
     top: 0;
   }
+
   #root #leftCont #book #root2 {
     -webkit-transform: matrix(1, 0, 0, 0.001, 0, -200);
-            transform: matrix(1, 0, 0, 0.001, 0, -200);
+    transform: matrix(1, 0, 0, 0.001, 0, -200);
   }
+
   #root #leftCont #book #root5 {
     -webkit-transform: matrix(1, 0, 0, 0.001, 0, 200);
-            transform: matrix(1, 0, 0, 0.001, 0, 200);
+    transform: matrix(1, 0, 0, 0.001, 0, 200);
   }
+
   #root #leftCont #book #mask {
     width: 300px;
     height: 800px;
   }
+
   #root #leftCont #book #mask div {
     width: 300px;
     height: 400px;
     opacity: 0;
   }
+
   #root #leftCont #doughter {
     width: 300px;
   }
+
   #root #rightCont {
     width: 300px;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
+
   #root #rightCont #father {
     width: 300px;
   }
 }
+
 /*# sourceMappingURL=main.css.map */
